@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đếm ngược đến Tết Nguyên Đán 2026 và các sự kiện quan trọng trong năm. Theo dõi thời gian còn lại đến các ngày lễ đặc biệt của Việt Nam.">
+    <meta name="keywords" content="đếm ngược tết, tết nguyên đán, lịch việt nam, sự kiện việt nam, countdown tết">
+    <meta name="author" content="Đếm Ngược Tết">
+    <meta property="og:title" content="Đếm Ngược Tết Nguyên Đán & Các Sự Kiện Trong Năm">
+    <meta property="og:description" content="Đếm ngược thời gian đến Tết Nguyên Đán 2026 và các sự kiện quan trọng của Việt Nam">
+    <meta property="og:type" content="website">
+    
+    <title>Đếm Ngược Tết Nguyên Đán 2026 & Các Sự Kiện Trong Năm</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Tết Nguyên Đán 2026",
+        "startDate": "2026-01-29",
+        "description": "Tết Nguyên Đán - Năm Bính Ngọ 2026",
+        "location": {
+            "@type": "Place",
+            "name": "Việt Nam"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🎊</span>
+                <span class="logo-text">Đếm Ngược Tết</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-tab="home">Trang Chủ</a></li>
+                <li><a href="#about" class="nav-link" data-tab="about">Giới Thiệu</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Tab 1: Home - Countdown -->
+        <section id="home" class="tab-content active">
+            <!-- Current Date Display -->
+            <div class="current-date">
+                <p>Hôm nay: <span id="currentDate"></span></p>
+            </div>
+
+            <!-- Main Countdown Section -->
+            <div class="countdown-section">
+                <h1>Đếm Ngược Tết Nguyên Đán 2026</h1>
+                <p class="subtitle">Năm Bính Ngọ 🐴</p>
+                
+                <div class="countdown-container">
+                    <div class="countdown-box">
+                        <div class="countdown-value" id="days">0</div>
+                        <div class="countdown-label">Ngày</div>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-box">
+                        <div class="countdown-value" id="hours">0</div>
+                        <div class="countdown-label">Giờ</div>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-box">
+                        <div class="countdown-value" id="minutes">0</div>
+                        <div class="countdown-label">Phút</div>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-box">
+                        <div class="countdown-value" id="seconds">0</div>
+                        <div class="countdown-label">Giây</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Slider Section -->
+            <div class="events-section">
+                <h2>Các Sự Kiện Sắp Tới</h2>
+                
+                <div class="slider-container">
+                    <button class="slider-btn prev-btn" aria-label="Previous">
+                        <span>←</span>
+                    </button>
+                    
+                    <div class="slider-wrapper">
+                        <div class="slider-track" id="sliderTrack">
+                            <!-- Events will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    
+                    <button class="slider-btn next-btn" aria-label="Next">
+                        <span>→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 2: About -->
+        <section id="about" class="tab-content">
+            <div class="about-container">
+                <h1>Về Chúng Tôi 👋</h1>
+                
+                <div class="about-content">
+                    <div class="about-section">
+                        <h2>🎉 Chào mừng bạn đến với Đếm Ngược Tết!</h2>
+                        <p>
+                            Bạn có bao giờ thấy mình liên tục Google "còn bao nhiêu ngày nữa đến Tết?" không? 
+                            Hoặc đang lên kế hoạch nghỉ lễ nhưng quên mất Giỗ Tổ Hùng Vương là ngày nào? 
+                            Đừng lo, chúng tôi hiểu bạn! 😄
+                        </p>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>🚀 Trang web này sinh ra để làm gì?</h2>
+                        <p>
+                            Đơn giản thôi! Trang web này giúp bạn:
+                        </p>
+                        <ul class="about-list">
+                            <li>✨ Biết chính xác còn bao nhiêu ngày đến Tết (đến từng giây luôn nhé!)</li>
+                            <li>📅 Theo dõi các ngày lễ quan trọng trong năm</li>
+                            <li>🎯 Lên kế hoạch nghỉ lễ, du lịch một cách khoa học</li>
+                            <li>💪 Có động lực cày cuốc để đón Tết thật vui vẻ</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>💡 Tại sao trang web này đáng để bookmark?</h2>
+                        <p>
+                            Vì nó đơn giản, nhanh, không quảng cáo phiền phức, và quan trọng nhất - 
+                            nó giúp bạn không bao giờ bị "mất phương hướng thời gian" nữa! 
+                            Mỗi lần mở lên là biết ngay hôm nay còn bao xa đến Tết 🎊
+                        </p>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>🎨 Được làm bằng gì?</h2>
+                        <p>
+                            100% HTML, CSS và JavaScript thuần túy. Không framework, không phụ thuộc, 
+                            chỉ có tình yêu với code sạch và trải nghiệm người dùng mượt mà! ❤️
+                        </p>
+                    </div>
+
+                    <div class="about-section highlight">
+                        <p class="highlight-text">
+                            🌟 Chúc bạn có một năm tràn đầy năng lượng, và đừng quên quay lại thường xuyên nhé! 🌟
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Đếm Ngược Tết. Made with ❤️ for Vietnam</p>
+            <p class="footer-note">Thời gian hiển thị theo múi giờ Việt Nam (GMT+7)</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
