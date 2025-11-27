@@ -161,7 +161,10 @@ function initializeSlider() {
         }
     });
     
-    updateSliderButtons();
+    // Defer button update to avoid layout shift
+    requestAnimationFrame(() => {
+        updateSliderButtons();
+    });
 }
 
 function updateSliderButtons() {
@@ -173,7 +176,7 @@ function updateSliderButtons() {
     if (!sliderTrack || !prevBtn || !nextBtn) return;
     
     const totalCards = sliderTrack.children.length;
-    const containerWidth = sliderWrapper.offsetWidth;
+    const containerWidth = sliderWrapper.getBoundingClientRect().width;
     const cardWidth = 300; // card width
     const gap = 24; // gap between cards
     const visibleCards = Math.floor(containerWidth / (cardWidth + gap));
@@ -196,7 +199,7 @@ function slideEvents(direction) {
     const sliderTrack = document.getElementById('sliderTrack');
     const sliderWrapper = document.querySelector('.slider-wrapper');
     const totalCards = sliderTrack.children.length;
-    const containerWidth = sliderWrapper.offsetWidth;
+    const containerWidth = sliderWrapper.getBoundingClientRect().width;
     const cardWidth = 300;
     const gap = 24;
     const visibleCards = Math.floor(containerWidth / (cardWidth + gap));
@@ -382,4 +385,9 @@ function initialize() {
 }
 
 // ===== Start the Application =====
-document.addEventListener('DOMContentLoaded', initialize);
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initialize);
+} else {
+    // DOM is already loaded
+    initialize();
+}
